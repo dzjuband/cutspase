@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+                <div class="menu__wrapper">
+                    <div class="menu__img-wrap">
+                        <img class="menu__img" src="./img/logo.png" alt="logo"/>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__item-link" href="#">Home</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">About us</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Find space</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Share space</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Promote space</a></li>
+                    </ul>
+                    <div class="menu__butter">
+                        <div class="menu__butter__line"></div>
+                        <div class="menu__butter__line"></div>
+                        <div class="menu__butter__line"></div>
+                    </div>
+                </div>
+                <div class="main__block">
+                    <div calss="main__block-wrapper">
+                        <div class="main__block-row">
+                            <div class="main__block-col">
+                                <p class="main__block-text">Find your custom matched commercial real estate space.</p>
+                                <p class="main__block-desc">In oculis quidem exercitus quid ex ea consequatur? autem vel eum fugiat, quo pertineant ero tibique</p>
+                                <div class="main__block-email">
+                                    <div class="main__block-email-wrapper">
+                                        <input type="text" class="main__block-input"/>
+                                        <a herf="#" class="btn btn__postition">Subscribe</a>
+                                    </div>
+                                    
+                                </div> 
+                            </div>
+                            <div class="main__block-col">
+                                <img class="main__block-image" src="./img/main_img.jpg" alt="main image"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div> 
+</body>
+</html>
+
+<script>
+    let menu__butter = document.querySelector(".menu__butter");
+
+    let menu = document.getElementByClassName("menu");
+
+    menu__butter.addEventListener('toggle',function(){
+        menu.classList.toggle("show__menu");
+    })
+</script>
