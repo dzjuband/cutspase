@@ -38,7 +38,6 @@
                                         <input type="text" class="main__block-input"/>
                                         <a herf="#" class="btn btn__postition">Subscribe</a>
                                     </div>
-                                    
                                 </div> 
                             </div>
                             <div class="main__block-col">
@@ -55,9 +54,14 @@
 <script>
     let menu__butter = document.querySelector(".menu__butter");
 
-    let menu = document.getElementByClassName("menu");
+    let menu = document.querySelector('.menu');
 
-    menu__butter.addEventListener('toggle',function(){
-        menu.classList.toggle("show__menu");
+    menu__butter.addEventListener('click',function(){
+        if(window.getComputedStyle(menu).display == "none"){
+            menu.style.display = "flex";
+        } 
+        else {
+            menu.style.display = "none";
+        }
     })
 </script>

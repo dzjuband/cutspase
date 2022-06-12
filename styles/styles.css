@@ -162,6 +162,10 @@ html {
 }
 .menu__butter {
     display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+
 }
 
 .menu__butter__line {
@@ -180,11 +184,32 @@ html {
 @media screen and (max-width:800px) {
     .menu{
         display: none;
-        
+        flex-direction: column;
+        background-color: #000;
+        position: absolute;
+        top: 90px;
+        right: 3px;
+        z-index: 10;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .menu :not(:last-child) {
+        margin: 0 auto;
     }
 
     .menu__butter {
         display: block;
+    }
+
+}
+
+@media screen and (min-width:800px) {
+    .menu{
+        display: flex;
+    }
+    .menu__butter {
+        display: none ;
     }
 }
 
