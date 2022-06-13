@@ -187,6 +187,8 @@ html {
 
 .best__practice {
     padding-bottom: 145px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .best__practice-items {
@@ -259,7 +261,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 70px;
+    margin-bottom: 129px;
     border-radius: 10px;
 }
 
@@ -291,6 +293,78 @@ html {
 .watch_now {
     background-color: #fff;
     color:#F78434;
+}
+
+.serve__tile {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 62px;
+    letter-spacing: 0.8px;
+    text-align: center;
+}
+
+.serve__caption {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.serve__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serve__row div:first-child{
+    border-radius: 10px;
+    background-color: #F78434;
+}
+
+.serve__row div:nth-child(2){
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.rerve__img {
+    padding-top: 35px;
+    display: block;
+    margin: 0 auto;
+}
+
+.serve__col {
+    width: 50%;
+}
+
+.serve__col-title, .serve__col-caption {
+    text-align: center;
+}
+
+.serve__col-caption {
+    max-width: 364px;
+    margin: 0 auto;
+}
+
+.buyers_btn-white, .buyers_btn-red {
+    max-width: 172px;
+    display: block;
+    margin: 0 auto;
+}
+
+.buyers_btn-white {
+    background-color: #fff;
+    color: #F78434;
+}
+
+.buyers_btn-red {
+    background-color: #F78434;
+    color: #fff;
+}
+
+.serve__row>:nth-child(1){
+    margin-right: 30px;
+}
+
+.serve__row>:nth-child(2) {
+    border: #323232 1px solid;
 }
 /*************************************************************************************************************************/
 .dd {
