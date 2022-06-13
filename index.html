@@ -52,16 +52,26 @@
 </html>
 
 <script>
+
+
     let menu__butter = document.querySelector(".menu__butter");
 
     let menu = document.querySelector('.menu');
 
+
     menu__butter.addEventListener('click',function(){
-        if(window.getComputedStyle(menu).display == "none"){
-            menu.style.display = "flex";
-        } 
-        else {
+        
+        if(getComputedStyle(document.querySelector(".menu") ).display  == "flex"){
             menu.style.display = "none";
         }
-    })
+
+        else {
+            menu.style.display = "flex";
+        }
+    });
+    window.addEventListener('resize', function(event) {
+        if(document.documentElement.clientWidth>=800){
+            menu.style.display = "flex";
+        }
+    });
 </script>
