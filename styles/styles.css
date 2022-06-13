@@ -176,8 +176,13 @@ html {
     border-radius: 10px;
     
 }
+
 .menu__butter__line:not(:last-child){
     margin-bottom: 7px;
+}
+
+.best__practice {
+    padding-bottom: 145px;
 }
 
 .best__practice-items {
@@ -195,6 +200,7 @@ html {
     letter-spacing: 0.8px;
    
 }
+
 .best__practice-wrapper {
     margin: 0 auto;
     max-width: 374px;
@@ -216,3 +222,4 @@ html {
 .best__practice__col{
     width: 50%;
 }
+
