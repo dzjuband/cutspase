@@ -11,6 +11,13 @@
     .best__practice-items {
         justify-content: center;
     }
+    .block {
+        padding-left: 10px;
+    }
+    .using_our_product__background {
+        background-image: none;
+        background-color: #58bebf;
+    }
 }
 
 @media screen and (max-width:820px) {
@@ -86,8 +93,13 @@
         font-size: 28px;
         line-height: 35px;
     }
+
     body {
         max-width: 375px;
+    }
+
+    .contact {
+        margin-bottom: 10px;
     }
 }
 

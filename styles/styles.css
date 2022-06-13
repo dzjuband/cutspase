@@ -254,7 +254,44 @@ html {
    width:100%;
 }
 
+.using_our_product__background {
+    background: url("../img/Bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 70px;
+    border-radius: 10px;
+}
 
+.block {
+    padding-top: 92px;
+    padding-left: 58%;
+    padding-bottom: 92px;
+}
+
+.using_our_product-title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 62px;
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+    max-width: 342px;
+    
+}
+
+.using_our_product-caption {
+    margin-bottom: 30px;
+    max-width: 342px;
+}
+
+.contact, .watch_now {
+    min-width: 172px;
+}
+
+.watch_now {
+    background-color: #fff;
+    color:#F78434;
+}
 /*************************************************************************************************************************/
 .dd {
     display: flex;
