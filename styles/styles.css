@@ -148,8 +148,6 @@ html {
     right: 0;
 }
 
-
-
 .main__block-input {
     width: 100%;
     border-radius: 29px;
@@ -195,6 +193,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding-bottom: 90px;
 }
 
@@ -222,11 +221,25 @@ html {
 .best__practice__row {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.best__practice__col{
+.best__practice__row>:first-child {
+    flex-shrink: 0;
+}
+
+.best__practice__col {
     width: 50%;
+}
+
+.best__practice__img-wrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.best__practice__img-wrap img:nth-of-type(1){
+    margin-right: 33px;
 }
 
 .best__practice-cpation {
@@ -239,4 +252,23 @@ html {
 
 .best__practice-button {
    width:100%;
+}
+
+
+/*************************************************************************************************************************/
+.dd {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 30px;
+    max-width: 300px;
+    position: absolute;
+    bottom: 10%;
+    right: 6%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.dd-image {
+    max-width: 45px;
 }
