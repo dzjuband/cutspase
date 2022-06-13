@@ -202,6 +202,14 @@ html {
         display: block;
     }
 
+    .main__block-row >:not(:first-child){
+        display: none;
+    }
+
+    .main__block-row >:first-child{
+        width: 100%;
+    }
+
 }
 
 @media screen and (min-width:800px) {
@@ -215,4 +223,25 @@ html {
     }
 }
 
+@media screen and (max-width:650px) {
+    .main__block-text {
+        max-width: 400px;
+        font-size: 30px;
+        line-height: 52px;
+    }
+
+    .main__block-desc {
+        padding-top: 285px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .main__block-text {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    body {
+        max-width: 375px;
+    }
+}
 
