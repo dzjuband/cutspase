@@ -130,19 +130,25 @@ html {
     height: 100vh;
 }
 
-.btn__postition {
+.btn {
     padding: 12px 0;
     background-color: #F78434;
     border-radius: 29px;
     color: #FFFFFF;
     font-weight: 700;
     display: inline-block;
-    min-width: 159px;
     text-align: center;
+    text-decoration: none;
+}
+
+.btn__postition {
+    min-width: 159px;
     position: absolute;
     top: 0;
     right: 0;
 }
+
+
 
 .main__block-input {
     width: 100%;
@@ -223,3 +229,14 @@ html {
     width: 50%;
 }
 
+.best__practice-cpation {
+    padding-bottom: 40px;
+}
+
+.best__practice-button-wrapper {
+    max-width: 172px;
+}
+
+.best__practice-button {
+   width:100%;
+}
